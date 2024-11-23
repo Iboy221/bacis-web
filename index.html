@@ -4,126 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>basic web</title>
+    <title>Basic Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Heading  -->
     <div class="title-wrapper">
         <h1>Formulir Pendaftaran</h1>
-        <p>Setelah kirim formulir kamu akan pindah ke halaman registration fee Rp100rb untuk amankan kuotamu sebelum
-            kursi penuh!</p>
+        <p>Setelah mengirim formulir, kamu akan diarahkan ke halaman pembayaran sebesar Rp100rb untuk mengamankan kuotamu sebelum kursi penuh!</p>
     </div>
 
-    <a href="about.html">about Us</a>
-    <a href="index.html">Home</a>
-
-    <br><br>
-
-    <!-- <h1>Silahkan daftar</h1> -->
-    <div class="registaration-card">
-
-
+    <div class="container">
         <form>
+            <h2>Pilih Program yang Ingin Diambil</h2>
 
-
-
-            <h3>Pilih Program yang ingin diambil</h3>
-
-            <div>
-                <label>Pilih Program</label><br>
-            </div>
-            <div>
-                <select>
-                    <option>Kelas Ringan</option>
-                    <option>Kelas sedang</option>
-                    <option>Kelas berat</option>
-                </select>
-            </div>
+            <!-- Pilihan Program -->
+            <label for="program">Pilih Program</label>
+            <select id="program">
+                <option>Kelas Ringan</option>
+                <option>Kelas Sedang</option>
+                <option>Kelas Berat</option>
+            </select>
 
             <div class="flex-row">
-                <div>
-                    <label>Pilih Lokasi</label>
-                </div>
+                <!-- Lokasi -->
                 <div class="f-full">
-                    <select>
-                        <option>Kelas Ringan</option>
-                        <option>Kelas sedang</option>
-                        <option>Kelas berat</option>
+                    <label for="location">Pilih Lokasi</label>
+                    <select id="location">
+                        <option>Lokasi 1</option>
+                        <option>Lokasi 2</option>
+                        <option>Lokasi 3</option>
                     </select>
                 </div>
-                <div>
-                    <label>Pilih Batch</label>
-                </div>
-    
+
+                <!-- Batch -->
                 <div class="f-full">
-                    <select>
-                        <option>Kelas Ringan</option>
-                        <option>Kelas sedang</option>
-                        <option>Kelas berat</option>
+                    <label for="batch">Pilih Batch</label>
+                    <select id="batch">
+                        <option>Batch 1</option>
+                        <option>Batch 2</option>
+                        <option>Batch 3</option>
                     </select>
                 </div>
             </div>
 
-            <div class="f-full">
-                <h3>Informasi data diri</h3>
-            </div>
+            <h3>Informasi Data Diri</h3>
 
-            <div class="f-full">
-                <label>Nama depan :</label>
-            </div>
-            <div class="f-full">
-                <input type="text">
-            </div>
+            <!-- Nama Depan -->
+            <label for="first-name">Nama Depan:</label>
+            <input type="text" id="first-name" placeholder="Masukkan nama depan">
 
-            <div class="f-full">
-                <label>Nama belakang :</label>
-            </div>
-            <div class="f-full">
-                <input type="text">
-            </div>
+            <!-- Nama Belakang -->
+            <label for="last-name">Nama Belakang:</label>
+            <input type="text" id="last-name" placeholder="Masukkan nama belakang">
+
             <div class="flex-row">
-            <div class="f-full">
-                <label>Email</label>
+                <!-- Email -->
+                <div class="f-full">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Masukkan email">
+                </div>
+
+                <!-- Jenis Kelamin -->
+                <div class="f-full">
+                    <label for="gender">Jenis Kelamin:</label>
+                    <select id="gender">
+                        <option>Laki-laki</option>
+                        <option>Perempuan</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="f-full">
-                <input type="email" name="email" id="email"><br><br>
-            </div>
+            <!-- Alamat -->
+            <label for="address">Alamat Lengkap:</label>
+            <textarea id="address" placeholder="Masukkan alamat lengkap"></textarea>
 
-            <div class="f-full">
-                <label>Jenis kelamin :</label>
-            </div>
-
-            <div class="f-full">
-                <select>
-                    <option>Laki-laki</option>
-                    <option>Perempuan</option>
-                </select>
-            </div>
-
-            <div class="f-full">
-
-                <label>Alamat lengkap :</label>
-            </div>
-            <div class="f-full">
-                <textarea></textarea>
-            </div>
-
-
-            <div class="f-full">
-                <input type="checkbox" name="button" id="button" placeholder="button"><label>Dengan mengirim formulir
-                    ini saya menyetujui Syarat dan Ketentuan untuk mengikuti program yang saya daftarkan.
-                </label>
-            </div>
             <div>
+                <input type="checkbox" id="terms">
+                <label for="terms">Dengan mengirim formulir ini saya menyetujui Syarat dan Ketentuan untuk mengikuti program yang saya daftarkan.</label>
+            </div>
+
+            <!-- Tombol -->
+            <div class="flex-row">
                 <button type="reset">Reset</button>
             </div>
         </form>
-
-
-    </div>
     </div>
 </body>
 
